@@ -51,11 +51,18 @@ function App() {
       <div className="buttons">
         <button onClick={handlePreviousPageChange} disabled={page <= 1}>Prev</button>
 
-        <select className='category-select' value={category} onChange={handleCategoryChange} onClick={fetchPhotos}>
+        <select
+          className='category-select'
+          value={category}
+          onChange={handleCategoryChange}
+        >
           {categories.map((cat) => (
-            <option key={cat} value={cat}>{cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
+            <option key={cat} value={cat}>
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </option>
           ))}
         </select>
+
 
         <button onClick={handleNextPageChange}>Next</button>
 
