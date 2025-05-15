@@ -36,13 +36,13 @@ Clear routing structure and error handling
 Folder Structure : 
 
 root/
-├── client/                 # React frontend
+├── client/   # React frontend
 │   ├── src/
 │   │   ├── App.tsx
 │   │   ├── store/
 │   │   └── reducer/photoSlice.ts
 │   └── App.css
-├── backend/                # Node.js server
+├── backend/   # Node.js server
 │   ├── routes/photoRoutes.js
 │   └── server.js
 ├── .env
